@@ -120,9 +120,9 @@ Then choose the option you are the most comfortable with.
 
 ### Mainboard Option 2 - Flashing using OctoPrint
 
-You need `advdude` and the **Firmware Updater** plugin.
+You need `avrdude` and the **Firmware Updater** plugin.
 
-To install `advdude` on a Raspberry Pi:
+To install `avrdude` on a Raspberry Pi:
 
 * Connect to the Raspberry (for example through SSH) and enter the command:
 
@@ -143,7 +143,7 @@ To flash the firmware:
 
 ![firmwareupdater](https://user-images.githubusercontent.com/981049/31636354-65b72dfe-b2ca-11e7-8c7d-7279477906d0.png)
 
-* When **OctoPrint** in rebooted and the UI reloaded, click on the wrench icon in the toolbar
+* When **OctoPrint** is rebooted and the UI reloaded, click on the wrench icon in the toolbar
 * Under **Plugins**, choose **Firmware Updater**
 * Click on the wrench icon, and enter the following parameters:
 
