@@ -6,11 +6,11 @@
 
 * **Temperatures**: Displays the current temperature of the extruder (red) and of the bed (blue). Displays also the current speed of the extruder's fan (gray) and the z-height in mm (green). Tap on this area to show a graph of temperatures.
 * **Version**: Displays the version number of **ADVi3++**. Taps on this area to show an About panel with information about the release installed.
-* **Controls**: Taps on this button to display the **Controls** panel with tools such as Load and Unload Filament, Move, etc.
-* **Print**: Taps on this button to display the **Print** panel (if your are printing) or the Temperature graph (if you are not).
-* **Tuning**: Taps on this button to display the **Tuning** panel with tools to help you adjust some parameters of your printer.
-* **Settings**: Taps on this button to display the **Settings** panel. In this panel, you can view and modify several parameters of the printer.
-* **Info**: Taps on this button to display the **Information** panel with access to information such as **Statistics**, **Versions** and **Copyrights**.
+* **Controls**: Tap on this button to display the **Controls** panel with tools such as Load and Unload Filament, Move, etc.
+* **Print**: Tap on this button to display the **Print** panel (if your are printing) or the Temperature graph (if you are not).
+* **Tuning**: Tap on this button to display the **Tuning** panel with tools to help you adjust some parameters of your printer.
+* **Settings**: Tap on this button to display the **Settings** panel. In this panel, you can view and modify several parameters of the printer.
+* **Info**: Tap on this button to display the **Information** panel with access to information such as **Statistics**, **Versions** and **Copyrights**.
 
 ## Controls
 
@@ -32,13 +32,13 @@ Select the extruder's target temperature you want to use (with the plus and minu
 
 **Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
 
-When the target temperature is almost reached, the extruder motor starts  extruding or extruding filament. When the filament comes out of, press the **Back** button.
+When the target temperature is almost reached, the extruder motor starts  extruding or un-extruding filament. When the filament comes out of, press the **Back** button.
 
 ### Preheat
 
 ![](assets/Preheat.png)
 
-You have the choice of three presets (both bed and hot-end temperatures). You can adjust each value by pressing the plus and minus buttons. To start heating bed and hot-end, press one of the checkmark button. To stop heating, press the cooldown button on the top right corner.
+You have the choice of three presets (both bed and hot-end temperatures). You can adjust each value by pressing the plus and minus buttons. To start heating bed and hot-end, press one of the checkmark buttons. To stop heating, press the cooldown button on the top right corner.
 
 **Tip**: *Keep the button pressed to quickly increment or decrement a temperature.*
 
@@ -75,7 +75,7 @@ The **Print** screen is displayed only when a print is running.
 
 * It displays a graph of the temperatures (bed in blue, hot-end in red).
 * **Stop**: Press the **Stop** button to stop the current printing. It also goes back to the previous screen. In case of a **USB Print**, it **disconnect the printer** as it is currently the only universal way to stop such print.
-* **Pause**: Press the **Pause** button to temporary stop the printing.
+* **Pause**: Press the **Pause** button to temporarily stop the printing.
 * **Resume**: Press the **Resume** button to resume a paused printing.
 * **Print Settings**: Press on the gear button to display and modify the **Print Settings** like the temperature, the fan speed, etc.
 * **Back**: If you press the **Back** button, the printing continues and it goes back to the previous screen.
@@ -128,7 +128,7 @@ This panel gives you access to tools to help you adjust some parameters of your 
 This tool helps you level your bed manually.
 
 * First, the head and bed return to their home position.
-* Then, press one of the button with a number to go to each position:
+* Then, press one of the buttons with a number to go to each position:
 
 ![](assets/ManualLeveling.png)
 
@@ -137,7 +137,7 @@ This tool helps you level your bed manually.
 ![](assets/leveling.jpg)
 
 * If you do not have a feeler gauge, you can also use a sheet of paper but it is less accurate.
-* Press the 5th button to check that your leveling is good. Press any of the other button to level again the corresponding corner.
+* Press the 5th button to check that your leveling is good. Press any of the other number buttons to level again the corresponding corner.
 * Once you are satisfied with the leveling, press the **Back** button.
 
 **Tip**: *A feeler gauge are cheap and you can buy one for a few dollars on Amazon, Banggood, etc. For example (randomly chosen items)*:
@@ -151,7 +151,7 @@ This tool helps you level your bed manually.
 
 ### Extruder
 
-This tool helps you adjust adjust the number of steps per millimeter for the extruder motor. There is no need to do this more than once, except if you change some mechanical parts.
+This tool helps you adjust the number of steps per millimeter for the extruder motor. There is no need to do this more than once, except if you change some mechanical parts.
 
 **Important**: *This parameter (number of steps per millimeter) is directly derived from the mechanical parts of the printer (the stepper motor, the gear, ...) Unless you change these parts (like the gear), there is no need to change this parameter. Its default value is `400`.*
 
@@ -167,7 +167,7 @@ This tool helps you adjust adjust the number of steps per millimeter for the ext
 
 * The printer starts heating the hot-end and when the target temperature is reached, it extrudes 100 mm of filament.
 
-* Once the extrusion is finished (it takes around a minute), measures the filament remaining between the extruder and your mark:
+* Once the extrusion is finished (it takes around a minute), measure the filament remaining between the extruder and your mark:
 
 ![](assets/Extruder2.jpg)
 
@@ -181,7 +181,7 @@ This tool helps you adjust adjust the number of steps per millimeter for the ext
 
 ![](assets/StepsSettings.png)
 
-* Press the **Back** button the restart the process, or on the **Checkmark** button to save the settings. They are saved in the EEPROM memory of the motherboard.
+* Press the **Back** button to restart the process, or on the **Checkmark** button to save the settings. They are saved in the EEPROM memory of the motherboard.
 
 ### XYZ motors
 
@@ -189,7 +189,7 @@ This tool helps you to adjust the number of steps per millimeter for the X, Y an
 
 **Important**: *These parameters (number of steps per millimeter) are directly derived from the mechanical parts of the printer (the stepper motor, ...) Unless you change these parts (like the motors), there is no need to change these parameters. The default values are `80`, `80`, and `400`.*
 
-* Print a cube 20x20x20 mm  and enter it actual dimensions (make more than one measure for each side and take the average):
+* Print a cube 20x20x20 mm  and enter it's actual dimensions (make more than one measure for each side and take the average):
 
 ![](assets/MotorsTuning.png)
 
@@ -197,7 +197,7 @@ This tool helps you to adjust the number of steps per millimeter for the X, Y an
 
 ![](assets/StepsSettings.png)
 
-* Press the **Back** button the restart the process, or on the **Checkmark** button to save the settings. They are saved in the EEPROM memory of the motherboard.
+* Press the **Back** button to restart the process, or on the **Checkmark** button to save the settings. They are saved in the EEPROM memory of the motherboard.
 
 **Tips**: *There are several calibration cubes on [Thingiverse](https://www.thingiverse.com). For example:*
 
@@ -228,7 +228,7 @@ This tool helps you to adjust the number of steps per millimeter for the X, Y an
 
 **Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
 
-* The PID tuning process starts. The printer increase and decrease the temperature of the hot-end around the target value:
+* The PID tuning process starts. The printer increases and decreases the temperature of the hot-end around the target value:
 
 ![](assets/PIDTuning2.png)
 
@@ -236,7 +236,7 @@ This tool helps you to adjust the number of steps per millimeter for the X, Y an
 
 ![](assets/PIDSettings.png)
 
-* Press the **Back** button the restart the process, or on the **Checkmark** button to save the settings. They are saved in the EEPROM memory of the motherboard.
+* Press the **Back** button to restart the process, or on the **Checkmark** button to save the settings. They are saved in the EEPROM memory of the motherboard.
 
 ### Sensor
 
@@ -251,12 +251,12 @@ This panel gives you access to tools to control your sensor.
 
 ![](assets/SensorGrid.png)
 
-**IMPORTANT**: For an accurate leveling, you have to measure the **Z-height** first (see bellow)
+**IMPORTANT**: For an accurate leveling, you have to measure the **Z-height** first (see below)
 
 * **Self-test**: Start the self-test of the probe. To stop the test, press **Reset**
 * **Reset**: Reset the sensor in case of an error (when the LED of the sensor is flashing)
 * **Deploy**: Deploy the push-pin
-* **Stow**: Slow the push-pin
+* **Slow**: Slow the push-pin
 * **Z-height**: The sensor has no way to know the distance between itself and the nozzle. For X and Y offsets, it depends of the sensor's support and it does not have to be precise. But for the Z axis, it has to be very precise. This tool helps you measure the Z-height:
   
   * Taps on **Z-height**.
@@ -265,7 +265,7 @@ This panel gives you access to tools to control your sensor.
   ![](assets/ZHeightLeveling.png)
   
   * Adjust the bed's four thumb nuts so a feeler gauge can move between the nozzle and the bed with just a tiny bit of friction. Contrary to the Manual bed leveling, you just have to adjust this location.
-  * Press the **Continue** button and the probe will move at the center of the bed and measure the Z-height. Once it is done, the result is displayed:
+  * Press the **Continue** button and the probe will move to the center of the bed and measure the Z-height. Once it is done, the result is displayed:
 
   ![](assets/SensorSettings.png)
   
@@ -276,10 +276,10 @@ This panel gives you access to tools to control your sensor.
 
 ![](assets/Settings.png)
 
-* **Motors**: Displays several settings related to the stepper motors (see bellow).
+* **Motors**: Displays several settings related to the stepper motors (see below).
 * **PID**: Displays the current PID settings.
-* **Firmware**: Change parameters controlled the firmware such as the thermal protection and the baud rate.
-* **Sensor**: Displays and let you adjust sensor's settings.
+* **Firmware**: Change parameters controlled by the firmware such as the thermal protection and the baud rate.
+* **Sensor**: Displays and lets you adjust sensor's settings.
 * **LCD**: Change LCD parameters such as the dimming and the buzzer.
 * **Reset** (in the top-right corner): Resets all the parameters stored in EEPROM to their factory values.
 
@@ -287,7 +287,7 @@ This panel gives you access to tools to control your sensor.
 
 * Before resetting all the settings to their default, you have to confirm it by pressing the **Checkmark** button.
 * If you do not want to reset the settings, press the **Back** button.
-* Once confirmed, all settings are reset to their default and saved in the EEPROM memory of the motherboard.
+* Once confirmed, all settings are reset to their default and are saved in the EEPROM memory of the motherboard.
 
 ### Motors
 
@@ -302,11 +302,11 @@ This panel gives you access to tools to control your sensor.
 
 ![](assets/StepsSettings.png)
 
-This screen display the step settings of the motors.
+This screen displays the step settings of the motors.
 
 * To adjust them manually, press the minus or plus buttons.
 
-**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the step values.*
 
 * To save them, press the **Checkmark** button. The settings are saved in the EEPROM memory of the motherboard.
 * The cancel any changes, press the **Back** button. It goes back to the previous screen.
@@ -315,11 +315,11 @@ This screen display the step settings of the motors.
 
 ![](assets/FeedrateSettings.png)
 
-This screen display the feedrate (speed) settings of the motors.
+This screen displays the feedrate (speed) settings of the motors.
 
 * To adjust them manually, press the minus or plus buttons.
 
-**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the feedrate values.*
 
 * To save them, press the **Checkmark** button. The settings are saved in the EEPROM memory of the motherboard.
 * The cancel any changes, press the **Back** button. It goes back to the previous screen.
@@ -328,11 +328,11 @@ This screen display the feedrate (speed) settings of the motors.
 
 ![](assets/AccelerationSettings.png)
 
-This screen display the acceleration settings of the motors.
+This screen displays the acceleration settings of the motors.
 
 * To adjust them manually, press the minus or plus buttons.
 
-**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the acceleration values.*
 
 * To save them, press the **Checkmark** button. The settings are saved in the EEPROM memory of the motherboard.
 * The cancel any changes, press the **Back** button. It goes back to the previous screen.
@@ -341,11 +341,11 @@ This screen display the acceleration settings of the motors.
 
 ![](assets/JerkSettings.png)
 
-This screen display the jerk settings of the motors. The (maximum) jerks are the instantaneous change of speed that can be made. In other words, it is the (maximum( speed that the printer will immediately jump to before taking acceleration into account.
+This screen displays the jerk settings of the motors. The (maximum) jerks are the instantaneous change of speed that can be made. In other words, it is the (maximum) speed that the printer will immediately jump to before taking acceleration into account.
 
 * To adjust them manually, press the minus or plus buttons.
 
-**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the value.*
 
 * To save them, press the **Checkmark** button. The settings are saved in the EEPROM memory of the motherboard.
 * The cancel any changes, press the **Back** button. It goes back to the previous screen.
@@ -358,11 +358,9 @@ This screen display the jerk settings of the motors. The (maximum) jerks are the
 
 [RepRap web site](http://reprap.org/wiki/PID_Tuning)
 
-This screen display the jerk settings of the motors. The (maximum) jerks are the instantaneous change of speed that can be made. In other words, it is the (maximum( speed that the printer will immediately jump to before taking acceleration into account.
-
 * To adjust the PID settings manually, press the minus or plus buttons.
 
-**Tip**: *Keep the button pressed to quickly increment or decrement the temperature.*
+**Tip**: *Keep the button pressed to quickly increment or decrement the value.*
 
 * To save them, press the **Checkmark** button. The settings are saved in the EEPROM memory of the motherboard.
 * The cancel any changes, press the **Back** button. It goes back to the previous screen.
@@ -385,7 +383,7 @@ This screen display the jerk settings of the motors. The (maximum) jerks are the
 
 ![](assets/LCDSettings.png)
 
-* **Screen dimming**: By default, the LCD displays lower its brightness after one minute. Here, you can disable or enable this dimming.
+* **Screen dimming**: By default, the LCD display lowers it's brightness after one minute. Here, you can disable or enable this dimming.
 * **Brightness**: Adjust the brightness of the LCD display.
 * **Beep when waiting action**: Enable or disable the buzzer when the printer is waiting for an action. It is in particular the case when loading or unloading filament, and with Advanced Pause (M600)
 * **Beep on press**: Enable or disable the buzzer when you tap on the LCD panel
@@ -400,11 +398,11 @@ This screen display the jerk settings of the motors. The (maximum) jerks are the
 
 ![](assets/Statistics.png)
 
-This screen display various statistics:
+This screen displays various statistics:
 
-* **Total prints**: The number of prints send to the printer.
+* **Total prints**: The number of prints sent to the printer.
 * **Completed prints**: The number of prints completed.
-* **Total print time**: The total time spend on printing.
+* **Total print time**: The total time spent on printing.
 * **Longest print time**: The longest print.
 * **Total filament extruded**: The total number of meters of filament extruded.
 
@@ -412,7 +410,7 @@ This screen display various statistics:
 
 ![](assets/Versions.png)
 
-This screen display the version of several software components:
+This screen displays the version of several software components:
 
 * **ADVi3++ LCD**: The version of the LCD part of **ADVi3++**.
 * **ADVi3++ Motherboard**: The version of the Motherboard part of **ADVi3++**.
@@ -429,7 +427,7 @@ This screen display the version of several software components:
 
 ![](assets/Sponsors.png)
 
-You can sponsor **ADVi3++** on [Patreon](http://www.patreon.com/andrivet). As part of the $16 reward and if you agree, your name (or pseudo) will be mentioned on this screen, in the documentation of ADVi3++, its web site, in the binaries and your name will even be displayed when the firmware boots (on the COM port).
+You can sponsor **ADVi3++** on [Patreon](http://www.patreon.com/andrivet). As part of the $16 reward, and if you agree, your name (or pseudo) will be mentioned on this screen, in the documentation of ADVi3++, its web site, in the binaries, and your name will even be displayed when the firmware boots (on the COM port).
 
 ## Thermal Runaway Error
 
@@ -437,7 +435,7 @@ You can sponsor **ADVi3++** on [Patreon](http://www.patreon.com/andrivet). As pa
 
 ADVi3++ (thanks to Marlin Firmware) has an important safety feature enabled by default and that is not present in the stock firmware: **thermal protection**. 
 
-If your thermistor falls for a reason, if will give a wrong value to the firmware (around 0) and if the bed or the hotend are heating, they will continue to heat and heat (believing that the temperature is not increasing) until... it eventually **burns**. This is why Marlin has introduce a safety feature: if some abnormal occurs, the firmware will stop heating, display this message and shutdown.
+If your thermistor falls for a reason, if will give a wrong value to the firmware (around 0) and if the bed or the hotend are heating, they will continue to heat and heat (believing that the temperature is not increasing) until... it eventually **burns**. This is why Marlin has introduced a safety feature: if something abnormal occurs, the firmware will stop heating, display this message and shutdown.
 
 When this screen is displayed, it indicates in blue the anomaly detected:
 
@@ -457,13 +455,13 @@ If you are absolutely sure that nothing is wrong and you still have errors, you 
 
 ![](assets/EEPROMMismatch.png)
 
-When you upgrade **ADVi3++**, this message may appears one time on boot. This is because the settings of the new version are not compatible with those of the old one. So the settings are reset and you have to either enter settings manually or redo the tuning.  
+When you upgrade **ADVi3++**, this message may appear one time on boot. This is because the settings of the new version are not compatible with those of the old one. So the settings are reset and you have to either enter settings manually or redo the tuning.  
 
 ## Version Warning
 
 ![](assets/Mismatch.png)
 
-When you upgrade **ADVi3++**, this message may appears if you have a version of the LCD part that is not compatible with the mainboard part. You have to use compatible versions (i.e. the same version for both).
+When you upgrade **ADVi3++**, this message may appear if you have a version of the LCD part that is not compatible with the mainboard part. You have to use compatible versions (i.e. the same version for both).
 
 ## No Sensor
 
