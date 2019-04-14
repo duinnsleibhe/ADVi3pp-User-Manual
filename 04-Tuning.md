@@ -1,12 +1,12 @@
 # Tuning
 
-**ADVi3** includes tools to help you tune soma aspects of your printer.
+**ADVi3** includes tools to help you tune some aspects of your printer.
 
 ### Extruder Tuning
 
 ![](assets/ExtruderTuningMeasure.png)
 
-In general, you only have to do this **once** because this parameter do not change with time. It is related to the mechanics of your printer. If you change the gear of your extruder, you have to perform this tuning.
+In general, you only have to do this **once** because this parameter does not change with time. It is related to the mechanics of your printer. If you change the gear of your extruder, you have to perform this tuning.
 
 The maths are the following:
 
